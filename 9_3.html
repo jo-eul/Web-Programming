@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 500px;
+      height: 300px;
+      border-radius: 10px;
+    }
+    .grad{
+      background:aqua;
+      background: linear-gradient(to bottom,rgb(209, 103, 54),white 30%,rgb(125, 224, 224));
+    }
+    .grad1{
+      background: palevioletred;
+      background: radial-gradient(white,pink,palevioletred);
+    }
+    li{
+      display: block;
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      margin: 10px;
+    }
+    #grad2{
+      background: red;
+      background: radial-gradient(circle closest-side at 30% 40%,white,yellow,red);
+    }
+    #grad3{
+      background: red;
+      background: radial-gradient(circle closest-corner at 30% 40%,white,yellow,red);
+    }
+    #grad4{
+      background: red;
+      background: radial-gradient(circle farthest-side at 30% 40%,white,yellow,red);
+    }
+    #grad5{
+      background: red;
+      background: radial-gradient(circle farthest-corner at 30% 30%,white,yellow,red);
+    }
+  </style>
+</head>
+<body>
+  <div class="grad"></div>
+  <div class="grad1"></div>
+  <ul>
+    <li id="grad2"></li>
+    <li id="grad3"></li>
+    <li id="grad4"></li>
+    <li id="grad5"></li>
+  </ul>
+</body>
+</html>
